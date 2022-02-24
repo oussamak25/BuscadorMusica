@@ -24,8 +24,8 @@
         <TextField fx:id="txPalabra" promptText="Introduzca una palabra para ver las canciones que contienen esa  palabra" GridPane.columnIndex="1" GridPane.columnSpan="2" />
         <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="3" GridPane.rowIndex="1">
             <columns>
-                <TableColumn fx:id="clNombre" prefWidth="265.0" text="Nombre autor" />
-                <TableColumn fx:id="clAutor" prefWidth="247.0" text="Nombre cancion" />
+                <TableColumn fx:id="clAutor" prefWidth="247.0" text="Nombre Autor" />
+                <TableColumn fx:id="clNombre" prefWidth="265.0" text="Nombre Cancion" />
             </columns>
         </TableView>
     </children>
