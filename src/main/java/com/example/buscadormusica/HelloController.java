@@ -25,6 +25,7 @@ public class HelloController {
 
     public  void  pintarDatos(){
         this.clNombre.setCellValueFactory(new PropertyValueFactory<>("title"));
+        this.clAutor.setCellValueFactory(new PropertyValueFactory<>("name"));
         datos=control.getDatos();
         this.table.setItems(datos);
     }

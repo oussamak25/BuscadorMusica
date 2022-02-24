@@ -10,21 +10,22 @@
 
 <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.buscadormusica.HelloController">
     <columnConstraints>
-        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="293.0" minWidth="10.0" prefWidth="140.0" />
-        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="460.0" minWidth="10.0" prefWidth="460.0" />
+        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="293.0" minWidth="10.0" prefWidth="162.0" />
+        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="460.0" minWidth="10.0" prefWidth="33.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="460.0" minWidth="10.0" prefWidth="460.0" />
     </columnConstraints>
     <rowConstraints>
-        <RowConstraints maxHeight="128.0" minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
-        <RowConstraints maxHeight="257.0" minHeight="10.0" prefHeight="101.0" valignment="CENTER" vgrow="SOMETIMES" />
-        <RowConstraints maxHeight="237.0" minHeight="10.0" prefHeight="237.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="150.0" valignment="CENTER" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
     </rowConstraints>
     <children>
-        <Button fx:id="btnObtener" mnemonicParsing="false" onAction="#obtener" text="Obtenr canciones" textAlignment="CENTER" GridPane.rowIndex="1" />
-        <TextField fx:id="txPalabra" promptText="Introduzca una palabra para ver las canciones que contienen esa  palabra" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-        <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="2">
+        <Button fx:id="btnObtener" mnemonicParsing="false" onAction="#obtener" text="Obtenr canciones" textAlignment="CENTER" />
+        <TextField fx:id="txPalabra" promptText="Introduzca una palabra para ver las canciones que contienen esa  palabra" GridPane.columnIndex="1" GridPane.columnSpan="2" />
+        <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="3" GridPane.rowIndex="1">
             <columns>
-                <TableColumn fx:id="clNombre" prefWidth="265.0" text="C1" />
-                <TableColumn fx:id="clAutor" prefWidth="247.0" text="C2" />
+                <TableColumn fx:id="clNombre" prefWidth="265.0" text="Nombre autor" />
+                <TableColumn fx:id="clAutor" prefWidth="247.0" text="Nombre cancion" />
             </columns>
         </TableView>
     </children>

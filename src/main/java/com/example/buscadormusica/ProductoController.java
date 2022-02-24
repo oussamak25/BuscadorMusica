@@ -55,7 +55,7 @@ public class ProductoController implements Callback<List<com.example.buscadormus
             List<com.example.buscadormusica.CancionesModelo> changesList = response.body();
 
             for (int i = 0; i<changesList.size();i++){
-                p=new com.example.buscadormusica.CancionesModelo(changesList.get(i).getId(), changesList.get(i).getType(), changesList.get(i).getTitle());
+                p=new com.example.buscadormusica.CancionesModelo(changesList.get(i).getId(), changesList.get(i).getType(), changesList.get(i).getTitle(), changesList.get(i).getArtist().getName());
 
                 datos.add(p);
             }

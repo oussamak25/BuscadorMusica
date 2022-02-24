@@ -6,11 +6,23 @@ import com.google.gson.annotations.SerializedName;
 import java.util.List;
 
 public class CancionesModelo {
-    public CancionesModelo(Integer id, String type, String title) {
+    public CancionesModelo(Integer id, String type, String title, String name) {
         this.id = id;
         this.type = type;
         this.title = title;
+        this.name=name;
+
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    String  name;
 
     @SerializedName("id")
     @Expose
